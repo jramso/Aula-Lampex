@@ -22,8 +22,7 @@ lutas = [
 def somar_estatisticas(personagens_dict):
     soma_por_personagem = {}
     for nome, stats in personagens_dict.items():
-        total = stats["forca"] + stats["vida"] + \
-            stats["velocidade"] + stats["magia"]
+        total = stats["forca"] + stats["vida"] + stats["velocidade"] + stats["magia"]
         soma_por_personagem[nome] = total
     return soma_por_personagem
 
