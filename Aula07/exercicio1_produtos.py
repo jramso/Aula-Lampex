@@ -32,14 +32,13 @@ Produtos = [
 
 # Função para mostrar nome, número de comentários e nota média de cada produto
 
-
+# Função da letra B
 def info_produtos(lista):
-    print("b. Nome | Número de comentários | Nota média")
-    print("-" * 50)
+
     for produto in lista:
         nome = produto["nome"]
         num_comentarios = len(produto["comentarios"])
-        media = sum(produto["notas"]) / len(produto["notas"])
+        media = sum(produto["notas"]) / len(produto["notas"]) 
         print(f"{nome} | {num_comentarios} | {media:.2f}")
 
 # Função para mostrar o último comentário de cada produto

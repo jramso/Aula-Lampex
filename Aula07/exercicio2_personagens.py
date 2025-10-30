@@ -1,6 +1,11 @@
 # Dados fornecidos no enunciado
 personagens = {
-    "zangief": {"forca": 100, "vida": 150, "velocidade": 0, "magia": 0},
+    "zangief": {
+        "forca": 100, 
+        "vida": 150, 
+        "velocidade": 0, 
+        "magia": 0
+    },
     "ken": {"forca": 50, "vida": 100, "velocidade": 50, "magia": 50},
     "ryu": {"forca": 75, "vida": 100, "velocidade": 50, "magia": 25},
     "chun-li": {"forca": 25, "vida": 75, "velocidade": 125, "magia": 50}
@@ -74,8 +79,7 @@ def personagem_mais_escolhido(lutas_lista):
     # Encontrar o máximo de escolhas
     max_escolhas = max(contagem.values())
     # Filtrar os que têm esse máximo
-    candidatos = [nome for nome, qtd in contagem.items() if qtd ==
-                  max_escolhas]
+    candidatos = [nome for nome, qtd in contagem.items() if qtd == max_escolhas]
     # Em caso de empate, escolher por ordem alfabética
     mais_escolhido = min(candidatos)  # min() dá o primeiro em ordem alfabética
     return mais_escolhido
