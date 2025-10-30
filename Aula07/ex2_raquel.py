@@ -82,4 +82,9 @@ def personagem_mais_escolhido(lutas_lista):
     mais_escolhido = candidatos[0]
     return mais_escolhido
 print(f"O personagem mais escolhido para lutar é: {personagem_mais_escolhido(lutas)}")
-# print(f"O personagem mais escolhido para lutar é: {
+
+
+def personagem_mais_vencedor(lutas):
+
+
+return mais_vencedor
